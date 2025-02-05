@@ -19,6 +19,23 @@ base_monsters = [
     {"name": "Goblin", "level": 1, "health": 30, "attack": 5, "defense": 2, "xp": 5},
     {"name": "Orc", "level": 2, "health": 50, "attack": 8, "defense": 3, "xp": 8},
     {"name": "Troll", "level": 3, "health": 80, "attack": 12, "defense": 5, "xp": 12},
+    {"name": "Bandit", "level": 4, "health": 90, "attack": 14, "defense": 6, "xp": 14},
+    {"name": "Skeleton Warrior", "level": 5, "health": 100, "attack": 16, "defense": 7, "xp": 16},
+    {"name": "Dark Mage", "level": 6, "health": 110, "attack": 18, "defense": 8, "xp": 18},
+    {"name": "Werewolf", "level": 7, "health": 120, "attack": 20, "defense": 9, "xp": 20},
+    {"name": "Shadow Knight", "level": 8, "health": 130, "attack": 22, "defense": 10, "xp": 22},
+    {"name": "Fire Drake", "level": 9, "health": 150, "attack": 24, "defense": 12, "xp": 24},
+    {"name": "Ice Golem", "level": 10, "health": 160, "attack": 26, "defense": 13, "xp": 26},
+    {"name": "Necromancer", "level": 11, "health": 170, "attack": 28, "defense": 14, "xp": 28},
+    {"name": "Vampire Lord", "level": 12, "health": 180, "attack": 30, "defense": 15, "xp": 30},
+    {"name": "Demon Hound", "level": 13, "health": 200, "attack": 32, "defense": 16, "xp": 32},
+    {"name": "Wraith", "level": 14, "health": 210, "attack": 34, "defense": 17, "xp": 34},
+    {"name": "Fallen Angel", "level": 15, "health": 220, "attack": 36, "defense": 18, "xp": 36},
+    {"name": "Infernal Behemoth", "level": 16, "health": 250, "attack": 38, "defense": 20, "xp": 38},
+    {"name": "Titan", "level": 17, "health": 280, "attack": 40, "defense": 22, "xp": 40},
+    {"name": "Celestial Dragon", "level": 18, "health": 300, "attack": 42, "defense": 24, "xp": 42},
+    {"name": "Abyssal Horror", "level": 19, "health": 350, "attack": 45, "defense": 26, "xp": 45},
+    {"name": "Dark Overlord", "level": 20, "health": 400, "attack": 50, "defense": 30, "xp": 50}
 ]
 
 # Possible item drops
@@ -27,6 +44,34 @@ items = [
     {"name": "Iron Sword", "type": "weapon", "effect": "attack", "value": 5},
     {"name": "Steel Armor", "type": "armor", "effect": "defense", "value": 3},
 ]
+
+rare_items = [
+    {"name": "Sword of the Abyss", "type": "weapon", "effect": "attack", "value": 10, "level": 15},
+    {"name": "Shield of Eternity", "type": "armor", "effect": "defense", "value": 8, "level": 16},
+    {"name": "Dagger of Shadows", "type": "weapon", "effect": "attack", "value": 12, "level": 17},
+    {"name": "Armor of the Fallen", "type": "armor", "effect": "defense", "value": 10, "level": 18},
+    {"name": "Ring of the Void", "type": "weapon", "effect": "attack", "value": 15, "level": 19},
+    {"name": "Amulet of the Ancients", "type": "armor", "effect": "defense", "value": 12, "level": 20},
+    {"name": "Bow of the Celestial Hunt", "type": "weapon", "effect": "attack", "value": 14, "level": 18},
+    {"name": "Helm of the Infernal King", "type": "armor", "effect": "defense", "value": 14, "level": 19},
+    {"name": "Gauntlets of Titan Strength", "type": "weapon", "effect": "attack", "value": 10, "level": 17},
+    {"name": "Boots of the Phantom", "type": "armor", "effect": "defense", "value": 6, "level": 15},
+    {"name": "Staff of the Dark Mage", "type": "weapon", "effect": "attack", "value": 16, "level": 18},
+    {"name": "Cursed Blade of the Wraith", "type": "weapon", "effect": "attack", "value": 18, "level": 20},
+    {"name": "Cloak of the Shadow Knight", "type": "armor", "effect": "defense", "value": 9, "level": 16},
+    {"name": "Bracers of the Vampire Lord", "type": "armor", "effect": "defense", "value": 11, "level": 19},
+    {"name": "Pendant of the Demon Hound", "type": "weapon", "effect": "attack", "value": 13, "level": 18},
+    {"name": "Crown of the Abyssal Horror", "type": "armor", "effect": "defense", "value": 15, "level": 20},
+    {"name": "Hammer of the Titan", "type": "weapon", "effect": "attack", "value": 11, "level": 17},
+    {"name": "Orb of Celestial Power", "type": "weapon", "effect": "attack", "value": 14, "level": 19},
+    {"name": "Wings of the Fallen Angel", "type": "armor", "effect": "defense", "value": 16, "level": 20},
+    {"name": "Sword of the Dark Overlord", "type": "weapon", "effect": "attack", "value": 20, "level": 20}
+]
+
+def drop_rare_item(monster):
+    if monster["level"] >= 15 and random.random() < 0.2:  # 20% chance for rare item drop from level 15+ monsters
+        return random.choice([item for item in rare_items if item["level"] <= monster["level"]])
+    return None
 
 def scale_monsters():
     """Increase monster stats based on player's level."""
