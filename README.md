@@ -1,4 +1,4 @@
-🏹 Monster Battler RPG 🏆
+# 🏹 Monster Battler RPG 🏆
 
 A text-based RPG adventure where you battle monsters, level up, and collect powerful gear! Choose your fights wisely—your health does not regenerate on level-up, so potions are crucial for survival.
 
