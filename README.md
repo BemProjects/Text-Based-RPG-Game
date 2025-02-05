@@ -4,14 +4,6 @@ A text-based RPG adventure where you battle monsters, level up, and collect powe
 
 Will you become the strongest warrior or fall to the beasts of the land? 🏰🔥
 
-Installation
-
-Clone this repository and run the game:
-
- git clone https://github.com/yourusername/monster-battler.git
- cd monster-battler
- python monster_battler.py
-
 🕹️ How to Play
 
 Fight Monsters - Choose a monster and engage in battle.
@@ -63,28 +55,6 @@ The Orc hits you for 5 damage! (HP left: 95)
 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-⚔️ ASCII Art for Fun!
-
-      ( (                  
-      ) )            
-  ███████            
-  █░░░░░███            
-  █░░░░░███████         
-  █░░░░░███░░░░██        
-  █░░░░░███░░░░░░█        
-  █░░░░░███░░░░░░█        
-  █░░░░░███░░░░░░█        
-  ███████░░░░░░░█          
-    ( (  █░░░░░███          
-      ) )███████         
-          ███        
-          ██         
-         █  
-
-📜 License
-
-MIT
 
 🎮 Ready to Battle?
 
