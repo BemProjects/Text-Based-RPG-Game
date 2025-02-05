@@ -4,7 +4,7 @@ A text-based RPG adventure where you battle monsters, level up, and collect powe
 
 Will you become the strongest warrior or fall to the beasts of the land? 🏰🔥
 
-🕹️ How to Play
+## 🕹️ How to Play
 
 Fight Monsters - Choose a monster and engage in battle.
 
@@ -16,7 +16,7 @@ Use Potions - Restore your health using rare potions.
 
 Survive & Dominate - Face stronger enemies as you progress.
 
-🎮 Gameplay Preview
+## 🎮 Gameplay Preview
 
 ===== ⚔️ Adventure Menu ⚔️ =====
 1. Fight a Monster
@@ -25,7 +25,7 @@ Survive & Dominate - Face stronger enemies as you progress.
 4. Exit Game
 Choose an action: 1
 
-🦇 Available Monsters:
+## 🦇 Available Monsters:
 1. Goblin (Lv 1) - HP: 30, ATK: 5, DEF: 2
 2. Orc (Lv 2) - HP: 50, ATK: 8, DEF: 3
 3. Troll (Lv 3) - HP: 80, ATK: 12, DEF: 5
@@ -40,11 +40,11 @@ The Orc hits you for 5 damage! (HP left: 95)
 🎖️ Gained 8 XP! (Total XP: 8/10)
 🛡️ You found a Steel Armor! (Armor +3)
 
-📜 Features
+## 📜 Features
 
 ✅ Monster Selection - Fight different monsters at your level.✅ Monster Scaling - Enemies grow stronger as you do.✅ No Health Regeneration - Survive using health potions only.✅ Rare Item Drops - Find weapons, armor, and potions.✅ Inventory System - Equip items to boost your stats.✅ Leveling System - Gain XP, increase attack & defense.
 
-🔥 Upcoming Features
+## 🔥 Upcoming Features
 
 🏆 Boss Fights - Battle legendary monsters for rare loot.
 
@@ -56,7 +56,7 @@ The Orc hits you for 5 damage! (HP left: 95)
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-🎮 Ready to Battle?
+## 🎮 Ready to Battle?
 
 👊 Fork the repo and start your adventure today!
 
