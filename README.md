@@ -52,7 +52,7 @@ The Orc hits you for 5 damage! (HP left: 95)
 
 🎯 Special Skills - Unlock abilities as you level up.
 
-🤝 Contributing
+## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
